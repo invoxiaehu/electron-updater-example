@@ -60,7 +60,7 @@ function sendStatusToWindow(text) {
 }
 function createDefaultWindow() {
   win = new BrowserWindow();
-  win.webContents.openDevTools();
+  //win.webContents.openDevTools();
   win.on('closed', () => {
     win = null;
   });
@@ -138,5 +138,5 @@ app.on('ready', function()  {
 // autoUpdater.on('download-progress', (progressObj) => {
 // })
 // autoUpdater.on('update-downloaded', (info) => {
-//   autoUpdater.quitAndInstall();  
+//   autoUpdater.quitAndInstall();
 // })
